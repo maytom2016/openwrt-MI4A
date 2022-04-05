@@ -19,4 +19,4 @@ echo 'src-git kenzo https://github.com/kenzok8/small-package' >>feeds.conf.defau
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-echo 'src-git chinadns-ng https://github.com/izilzty/luci-app-chinadns-ng' >>feeds.conf.default
+#echo 'src-git chinadns-ng https://github.com/izilzty/luci-app-chinadns-ng' >>feeds.conf.default
