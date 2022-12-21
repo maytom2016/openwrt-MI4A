@@ -59,11 +59,14 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
+        mkdir openwrt
+        cd openwrt
         git init
         git remote add openwrt $REPO_URL
         git fetch --depth=1 $REPO_URL $REPO_COMMITID
         git reset --hard FETCH_HEAD
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        cd ..
 
     - name: Load custom feeds
       run: |
